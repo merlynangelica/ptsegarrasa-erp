@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SegarRasa ERP</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div id="login" class="login-shell">
+ <div class="login-card"><div class="brand-mark">SR</div><p class="eyebrow">PT SEGAR RASA RIAU</p><h1>SegarRasa ERP</h1>
+ <p class="muted">Enterprise Resource Planning · Odoo-inspired workspace</p>
+ <form id="loginForm"><label>Username</label><input name="username" value="owner" required><label>Password</label><input name="password" type="password" value="owner123" required><button class="primary">Sign in</button></form>
+ <small>Demo account: owner / owner123</small><div id="loginError" class="error"></div></div>
+</div>
+<div id="app" class="app-shell hidden">
+ <aside class="sidebar"><div class="brand"><span class="brand-mark small">SR</span><div><b>SegarRasa</b><small>ERP Workspace</small></div></div>
+ <div class="company-switch">PT Segar Rasa Riau <span>⌄</span></div>
+ <div class="nav-label">WORKSPACE</div><nav id="nav">
+ <button data-page="dashboard" class="active">◫ <span>Dashboard</span></button>
+ <button data-page="customers">♙ <span>Contacts</span></button><button data-page="products">▦ <span>Products</span></button>
+ <button data-page="sales">▤ <span>Sales</span></button><button data-page="purchase">▧ <span>Purchase</span></button>
+ <button data-page="stock">▥ <span>Inventory</span></button><button data-page="deliveries">⇧ <span>Delivery Orders</span></button>
+ <button data-page="receipts">⇩ <span>Receipts & Quality</span></button><button data-page="invoices">▣ <span>Invoicing</span></button>
+ <button data-page="bills">▣ <span>Vendor Bills</span></button><button data-page="transfers">⇄ <span>Internal Transfers</span></button>
+ <button data-page="returns">↶ <span>Returns</span></button><button data-page="journals">▤ <span>Accounting</span></button>
+ <button data-page="leads">◎ <span>CRM</span></button><button data-page="audit">◷ <span>Audit Log</span></button>
+ </nav><div class="sidebar-bottom"><small>Odoo Web 17 reference style</small><button id="logout">↪ Sign out</button></div></aside>
+ <main class="main"><header class="topbar"><div><span class="crumb">SegarRasa /</span> <b id="pageTitle">Dashboard</b></div>
+ <div class="user-area"><span class="status-dot"></span><span id="userName"></span><span class="role-pill" id="userRole"></span><button id="profile">⌄</button></div></header>
+ <section class="content"><div class="page-heading"><div><h1 id="heading">Overview</h1><p id="subheading">Monitor aktivitas bisnis dalam satu workspace.</p></div><div id="actions"></div></div><div id="notice"></div><div id="pageContent"></div></section>
+ </main>
+</div>
+<script src="/static/app.js"></script></body></html>

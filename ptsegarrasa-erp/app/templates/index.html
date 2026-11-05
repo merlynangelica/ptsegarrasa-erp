@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SegarRasa ERP</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="login" class="login-shell">
+    <div class="login-card">
+      <div class="brand-mark">SR</div>
+      <p class="eyebrow">PT SEGAR RASA RIAU</p>
+      <h1>SegarRasa ERP</h1>
+      <p class="muted">Enterprise Resource Planning · Odoo-inspired workspace</p>
+      <form id="loginForm">
+        <label>Username</label><input name="username" value="owner" required autocomplete="username">
+        <label>Password</label><input name="password" type="password" value="owner123" required autocomplete="current-password">
+        <button class="primary">Sign in</button>
+      </form>
+      <small>Akun uji: owner, sales, warehouse, procurement, finance, quality (password = username + 123)</small>
+      <div id="loginError" class="error"></div>
+    </div>
+  </div>
+
+  <div id="app" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark small">SR</span><div><b>SegarRasa</b><small>ERP Workspace</small></div></div>
+      <div class="company-switch">PT Segar Rasa Riau <span>IDR</span></div>
+      <div class="nav-label" id="navLabel">MENU</div>
+      <nav id="nav"></nav>
+      <div class="sidebar-bottom"><small>Struktur Odoo Web 17 (bukan kode Odoo)</small><button id="logout">↪ Sign out</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div class="crumbs"><button class="apps-btn" id="appsBtn" title="Apps">▦ Apps</button><span class="crumb" id="crumb"></span></div>
+        <div class="user-area">
+          <span class="status-dot"></span><span id="userName"></span><span class="role-pill" id="userRole"></span>
+          <span class="muted">· PT Segar Rasa Riau</span>
+        </div>
+      </header>
+      <section class="content">
+        <div class="page-heading">
+          <div><h1 id="heading">Home</h1><p id="subheading"></p></div>
+          <div id="actions" class="toolbar"></div>
+        </div>
+        <div id="notice"></div>
+        <div id="pageContent"></div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
